@@ -1,0 +1,8 @@
+
+<mat-form-field>
+  <input type="text" matInput [formControl]="form" [matAutocomplete]="auto">
+</mat-form-field>
+<mat-autocomplete #auto="matAutocomplete">
+    <mat-option (onSelectionChange)="showDetails(city)"
+    *ngFor="let city of historicalCities" [value]="city.name">{{city.name}}</mat-option>
+</mat-autocomplete>

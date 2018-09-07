@@ -1,0 +1,16 @@
+<table class="table table-striped">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">City</th>
+      <th scope="col">Historical</th>
+    </tr>
+  </thead>
+  <tbody *ngFor="let city of citiesList">
+    <tr>
+      <td>{{city.name}}</td>
+      <td>
+        <historical-autocomplete [newCityDetails]="city"></historical-autocomplete>
+      </td>
+    </tr>
+  </tbody>
+</table>

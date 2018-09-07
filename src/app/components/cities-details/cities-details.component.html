@@ -1,0 +1,28 @@
+<table class="table table-striped">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">Category</th>
+      <th scope="col">Id</th>
+      <th scope="col">Name</th>
+      <th scope="col">Admin Area</th>
+      <th scope="col">Country</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="table-success">
+      <th scope="row">City</th>
+      <td>{{data.newcity.id}}</td>
+      <td>{{data.newcity.name}}</td>
+      <td>{{data.newcity.admin_area}}</td>
+      <td></td>
+    </tr>
+    <tr class="table-warning">
+      <th scope="row">Historical</th>
+      <td>{{data.historical.id}}</td>
+      <td>{{data.historical.name}}</td>
+      <td>{{data.historical.admin_area}}</td>
+      <td>{{data.historical.country}}</td>
+    </tr>
+  </tbody>
+</table>
+<button type="button" class="btn btn-danger float-right" (click)="closeDialog()">Close</button>
